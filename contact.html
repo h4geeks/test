@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"> </script>
+<script src="https://kit.fontawesome.com/6098a3efd8.js" crossorigin="anonymous"></script>
+ 
+</head>
+ <body>
+   <!--Start of container -->
+   <div class="container">
+
+
+     <!--Start of header -->  
+     <div class="header"> 
+       <a href="index.html"><img src="logo.png" alt="logo" width="350px" ></a>
+
+       <div class="nav-bar">
+         <a href="index.html">Home </a>
+         <a href="about.html">About </a>
+         <a href="shop.html">Shop </a>
+         <a href="contact.html" class="active">Contact </a>
+
+       </div>
+     
+  
+     </div>
+     <!--end of header -->
+
+
+     <!--Start of contents -->  
+     <div class="contents"> 
+      <div class="contact"> 
+      <h1>Contact us</h1>
+      <form method="POST">
+    <input type="text" name="name" id="" placeholder="Name">
+    <input type="email" name="email" id="" placeholder="Email"><br>
+     <label>Subject:</label> <br>
+     <select onchange="toggleDisplay(this.value)" required>
+       <option value="none" disabled selected>--select-</option>
+       <option value="product-enquiry">Product Enquiry</option>
+       <option value="raise-issue">Raise Issue</option>
+       <option value="other">Other</option>
+     </select> <br>
+
+
+     <div style="display:none;" id="other"> 
+     <label>Enter Subject:</label><br>  
+     <input type="text" name="other" id="">
+     </div>
+
+     <div class="hidden" id="product"> <br>
+     <label>Enter Product name:</label><br>  
+     <input type="text" name="pname" id=""><br>
+     <label>Enter Product id:</label><br>  
+     <input type="text" name="pname" id="">
+     </div>
+
+     <div class="hidden" id="issue"> <br>
+     <label>Enter Issue:</label><br>  
+     <input type="text" name="issue" id=""><br>
+     <label>Enter Purchase date:</label><br>  
+     <input type="date" name="issue" id="">
+     </div>
+
+
+
+
+     <label>Message:</label><br>
+     <textarea  placeholder="Your message"></textarea>
+          
+      </form>
+
+      </div>
+    
+     </div>
+     <!--end of contents -->
+
+     <!--Start of footer -->  
+     <div class="footer"> 
+     <h3><u>Social</u></h3>  
+    <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+    <a href="https://www.discord.com"><i class="fab fa-discord"></i></a>
+    <p> Copyright <i class="far fa-copyright"> </i> <script>document.write(new Date().getFullYear());</script>  SomNath Sharma | <a style="color:#00a950;" href="#">All rights reserved</a> </p>
+     </div>
+
+     <!--end of footer --> 
+
+   </div>
+   <!--end of container -->
+  
+ </body>
+
+</html>
+
